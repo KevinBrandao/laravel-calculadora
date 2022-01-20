@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+//use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CalculadoraController;
 
 /*
@@ -15,9 +15,9 @@ use App\Http\Controllers\CalculadoraController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+//Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/calculadora1', [CalculadoraController::class, 'calculadora1']);
+//Route::get('/calculadora1', [CalculadoraController::class, 'calculadora1']);
 
 Route::post('/calcular', [CalculadoraController::class, 'calcular']);
 
