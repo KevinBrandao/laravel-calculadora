@@ -30,30 +30,30 @@ class CalculadoraController extends Controller
     {
         $num1 = $request->num1;
         $num2 = $request->num2;
-        $op = $request->op;
+        $operador = $request->operador;
 
-        if($op == '+')
+        if($operador == '+')
         {
             $result = $num1 + $num2;
 
             return view('calcular', compact('result'));
         }
 
-        if($op == '-')
+        if($operador == '-')
         {
             $result = $num1 - $num2;
 
             return view('calcular', compact('result'));
         }
 
-        if($op == '*')
+        if($operador == '*')
         {
             $result = $num1 * $num2;
 
             return view('calcular', compact('result'));
         }
 
-        if($op == '/')
+        if($operador == '/')
         {
             if($num2 == 0){
                 return "00";
@@ -65,7 +65,7 @@ class CalculadoraController extends Controller
 
         }
 
-        if($op != '+' && $op != '-' && $op != '*' && $op != '/')
+        if($operador != '+' && $operador != '-' && $operador != '*' && $operador != '/')
         {
             return "Operador Inválido";
         }

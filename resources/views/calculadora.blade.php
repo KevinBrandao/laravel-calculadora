@@ -10,7 +10,7 @@
     <form action = "/calcular" method = "POST">
         @csrf
         <input type = "number" name = "num1" placeholder = "Número 1">
-        <input name = 'op' placeholder = "Operador">
+        <input type="text"     name = 'operador' placeholder = "Operador">
         <input type = "number" name = "num2" placeholder = "Número 2">
         <button type = "submit">Somar</button>
     </form> 
