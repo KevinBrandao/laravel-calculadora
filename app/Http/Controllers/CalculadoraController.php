@@ -23,7 +23,7 @@ class CalculadoraController extends Controller
 
     public function calculadora1()
     {
-        return view('calculadora1');
+        return view('calculadora');
     }
 
     public function calcular(Request $request)

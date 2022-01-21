@@ -17,7 +17,7 @@ use App\Http\Controllers\CalculadoraController;
 
 //Route::get('/', [HomeController::class, 'index']);
 
-//Route::get('/calculadora1', [CalculadoraController::class, 'calculadora1']);
+Route::get('/calculadora', [CalculadoraController::class, 'calculadora']);
 
 Route::post('/calcular', [CalculadoraController::class, 'calcular']);
 
